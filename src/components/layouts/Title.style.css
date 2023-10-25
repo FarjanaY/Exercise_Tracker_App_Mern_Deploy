@@ -1,0 +1,16 @@
+.titleContainer {
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+.titleText {
+  color: black;
+  font-family: var(--headingFont);
+  text-transform: capitalize;
+  text-shadow: var(--textShadow);
+  font-size: 1.8rem;
+  text-decoration: underline;
+}

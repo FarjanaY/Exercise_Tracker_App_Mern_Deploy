@@ -1,0 +1,74 @@
+.createUserContainer {
+  padding: 1.5rem 0rem;
+}
+.createform {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 35vh;
+  margin-top: 1.5rem;
+}
+.createformContainer {
+  padding: 1rem 1rem;
+  width: 40%;
+  /* margin: 1rem 1rem; */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 4px 4px 5px black;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.createformDataDiv {
+  padding: 5px 10px;
+}
+.createformInput {
+  border-radius: 4px;
+  height: 1.8rem;
+  padding: 1px 10px;
+  box-shadow: var(--boxShadow);
+  border-style: none;
+  width: 100%;
+  text-transform: capitalize;
+  /* border: 1px solid var(--designColor); */
+}
+
+.createformLabel {
+  font-weight: 600;
+  /* text-shadow: 2px 2px 2px rgb(114, 112, 112); */
+  color: rgb(16, 12, 54);
+  padding: 1rem 0.5rem;
+  font-size: 1.1rem;
+}
+.submitDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+}
+.submitBtn {
+  margin-top: 1rem;
+  width: 5rem;
+  height: 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px #dde0de;
+  border-style: none;
+  background-color: #7ce47c;
+  border-radius: 4px;
+}
+
+/* For Tablet design */
+@media screen and (max-width: 992px) {
+  .createformContainer {
+    width: 50%;
+  }
+}
+
+/* for mobile design  */
+@media screen and (max-width: 768px) {
+  .createformContainer {
+    width: 70%;
+  }
+}

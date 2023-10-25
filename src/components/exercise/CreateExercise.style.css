@@ -1,0 +1,136 @@
+/* .mainExercise {
+  height: 110vh;
+} */
+.createExercise {
+  padding: 1rem 0rem;
+}
+.form {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.formContainer {
+  margin-top: 10px;
+  padding: 2rem 2rem;
+  width: 40%;
+  margin: 0rem 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 4px 4px 5px black;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.formDataDiv {
+  padding: 5px 10px;
+}
+select {
+  box-shadow: var(--boxShadow);
+  border-radius: 4px;
+  border-style: none;
+}
+option:focus {
+  border-radius: 4px;
+  background-color: #e95d5d;
+}
+select:focus,
+input:focus {
+  border-color: rgb(169, 169, 230);
+  outline: blue;
+  border-radius: 4px;
+}
+.formInput {
+  border-radius: 4px;
+  height: 1.8rem;
+  padding: 1px 10px;
+  box-shadow: var(--boxShadow);
+  border-style: none;
+  width: 100%;
+  text-transform: capitalize;
+  /* border: 1px solid var(--designColor); */
+}
+
+.formLabel {
+  font-weight: 600;
+  /* text-shadow: 2px 2px 2px rgb(114, 112, 112); */
+  color: rgb(16, 12, 54);
+  padding: 3px;
+}
+.submitDiv {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+}
+.submitBtn {
+  margin-top: 0.5rem;
+  width: 5rem;
+  height: 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px #dde0de;
+  border-style: none;
+  background-color: #7ce47c;
+  border-radius: 4px;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transfrom: translateY(0);
+  }
+  40% {
+    transform: translate(-0px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+.errorMsg {
+  background-color: #e95d5d;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px red;
+  border-radius: 4px;
+  padding: 2px 4px;
+  box-shadow: var(--boxShadow);
+  animation: bounce 1s infinite;
+}
+.successMsg {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px green;
+  border-radius: 4px;
+  padding: 2px 5px;
+  box-shadow: var(--boxShadow);
+  animation: bounce 1s infinite;
+  color: white;
+  background-color: #21663c;
+}
+.errorBorder {
+  border: 2px solid red;
+}
+
+/* Tab design */
+@media screen and (max-width: 992px) {
+  .formContainer {
+    padding: 1rem 2rem;
+    width: 50%;
+    margin: 2rem 5rem;
+  }
+}
+
+/* mobile design */
+@media screen and (max-width: 768px) {
+  .formContainer {
+    width: 75%;
+    margin: 2rem 3rem;
+  }
+}

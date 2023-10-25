@@ -1,0 +1,28 @@
+.errorContainer {
+  min-height: 100%;
+}
+.errorDiv {
+  overflow: auto;
+  height: 82vh;
+  text-align: center;
+  align-items: center;
+
+  /* justify-content: center; */
+}
+.errorDiv h1 {
+  color: red;
+  text-align: center;
+  padding-top: 5rem;
+  text-shadow: 4px 4px 3px black;
+  font-size: 3rem;
+}
+.errorDiv h2 {
+  color: black;
+  text-shadow: 1px 1px 2px rgb(85, 130, 253);
+}
+.footer {
+  position: relative;
+  height: 8vh;
+  margin-top: -8vh;
+  clear: both;
+}
