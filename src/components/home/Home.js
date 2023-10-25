@@ -19,7 +19,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/exercise/")
+      .get("https://exercise-tracker-app-52d7.onrender.com/api/exercise/")
       .then((response) => {
         const data = response.data;
         if (data.Exercises && Array.isArray(data.Exercises)) {
@@ -84,7 +84,7 @@ const Home = () => {
 
   function handleDelete(id) {
     axios
-      .delete(`http://localhost:8000/api/exercise/${id}`)
+      .delete(`https://exercise-tracker-app-52d7.onrender.com/api/exercise/${id}`)
       .then((res) => {
         //  window.location.reload(); //Refresh the page;
         setSuccessMsg("Record has been deleted!...");
