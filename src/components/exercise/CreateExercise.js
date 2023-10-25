@@ -28,7 +28,7 @@ const CreateExercise = () => {
   //Fectching user Name from datebase;
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/user/")
+      .get("https://exercise-tracker-app-52d7.onrender.com/api/user/")
       .then((response) => {
         const data = response.data;
         if (data.user && Array.isArray(data.user)) {
@@ -84,7 +84,7 @@ const CreateExercise = () => {
     //add data to database
     else {
       axios
-        .post("http://localhost:8000/api/exercise/addexercise", exercise)
+        .post("https://exercise-tracker-app-52d7.onrender.com/api/exercise/addexercise", exercise)
         .then(() => {
           console.log("Data Added Succesfully..");
         })
