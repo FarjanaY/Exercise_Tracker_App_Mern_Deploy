@@ -20,7 +20,7 @@ const CreateUser = () => {
       setErrMsg("User Name is Required...");
     } else {
       axios
-        .post("http://localhost:8000/api/user/adduser", { username: username })
+        .post("https://exercise-tracker-app-52d7.onrender.com/api/user/adduser", { username: username })
         .then((response) => {
           // console.log("FULL RESPONSE");
           // console.log(response);
