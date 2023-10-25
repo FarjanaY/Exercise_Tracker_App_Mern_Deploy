@@ -23,7 +23,7 @@ const EditExercise = () => {
   //Fectching user Name from datebase;
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/exercise/${id}`)
+      .get(`https://exercise-tracker-app-52d7.onrender.com/api/exercise/${id}`)
       .then((response) => {
         const data = response.data;
         console.log(data.Exercise);
@@ -39,7 +39,7 @@ const EditExercise = () => {
 
     //add data to database
     axios
-      .put(`http://localhost:8000/api/exercise/update/${id}`, exercise)
+      .put(`https://exercise-tracker-app-52d7.onrender.com/api/exercise/update/${id}`, exercise)
       .then(() => {
         console.log("Data Updated Succesfully..");
       })
